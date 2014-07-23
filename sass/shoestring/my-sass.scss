@@ -1,0 +1,246 @@
+// Base CSS Design: Mobile First
+
+// Imported Fonts
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Cardo);
+
+// variables
+
+$dark_navy: #174E59;
+$lime: #A4F7C0;
+$dark_teal: #0D5260;
+$dark_green: #052F2F;
+$sea_blue: #12C4C6;
+$cream: #F4FFE6;
+$dark_sea_blue: #189FA0;
+
+
+
+// all multiple tag effects
+div {
+	text-align: center;
+	padding: 0 5%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+// a, a:visited, a:hover{
+// 	text-decoration: none;
+// 	color: $dark_navy;
+// }
+
+// all header elements
+.header {
+	background-color: $dark_navy;
+	padding: 1em;
+	font-family: 'Cardo', serif;
+	letter-spacing: .16em;
+background: #0c252b; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #0c252b 7%, #143d47 47%, #143d47 47%, #0c252b 100%, #0c252b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(7%,#0c252b), color-stop(47%,#143d47), color-stop(47%,#143d47), color-stop(100%,#0c252b), color-stop(100%,#0c252b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  #0c252b 7%,#143d47 47%,#143d47 47%,#0c252b 100%,#0c252b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  #0c252b 7%,#143d47 47%,#143d47 47%,#0c252b 100%,#0c252b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  #0c252b 7%,#143d47 47%,#143d47 47%,#0c252b 100%,#0c252b 100%); /* IE10+ */
+background: linear-gradient(45deg,  #0c252b 7%,#143d47 47%,#143d47 47%,#0c252b 100%,#0c252b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c252b', endColorstr='#0c252b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.header img {
+	max-width: 100%;
+	margin-top: 5%;
+	padding-bottom: 5%;
+}
+
+.header {
+	h1, h2{
+		color: $cream;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 2.2em;
+	}
+	h2 {
+		font-variant: small-caps;
+	}
+}
+// all navbar elements
+
+div.navbar {
+	background-color: $sea_blue;
+	color: $cream;
+	font-family: 'PT Sans', sans-serif;
+	padding: 0 0;
+	letter-spacing: .1em;
+}
+
+div.navbar li {
+	padding: 0.3em;
+}
+
+div.navbar ul li a {
+	color: $cream;
+	font-size: 1.4em;
+}
+div.navbar ul li:hover {
+	color: $cream;
+	background-color: $dark_sea_blue;
+}
+
+// white (tagline + login) section
+
+.white {
+	padding-top: 0.8em;
+	padding-bottom: 1.9em;
+}
+
+
+.tagline {
+	color: $dark_sea_blue;
+	font-family: 'Cardo', serif;
+	font-size: 1em;
+	padding-top: 0.3em;
+	letter-spacing: .05em;
+}
+
+// Member Login Button
+
+.login {
+	padding-top: 1.3em;
+	letter-spacing: .05em;
+
+	.button {
+		padding: .305em;
+	}
+}
+
+a.button.member-login{
+	background-color: $sea_blue;
+	color: $cream;
+	border: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4em;
+}
+a.button.member-login:hover {
+	background: $lime;
+	color: $dark_sea_blue;
+	border: none;
+}
+
+// RECENT Elements
+
+.recent {
+	background-color: $dark_navy;
+	color: $cream;
+	font-family: 'Cardo', serif;
+	font-size: 1.4em;
+	padding: 1em;
+	letter-spacing: .16em;
+}
+
+// all blog elements
+.blog {
+	background-color: $cream;
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing: .022em;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+
+	h3 {
+		color: $sea_blue;
+		font-variant:small-caps;
+		font-size: 1.5em;
+		margin: 0;
+	}
+	
+	h4 {
+		color: $dark_navy;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+	
+	p {
+		text-align: left;
+		color: $dark_navy;
+	}
+	
+	p:first-child {
+		font-style: italic;
+	}
+	
+	p:last-child{
+		margin-bottom: 0;
+	}
+}
+// all final div contact elements
+.contact {
+	background-color: $dark_navy;
+	padding: 1em 1em;
+}
+
+// Font Awesome Link Stuff
+
+div.contact ul li {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+div.contact ul li a {
+	color: $sea_blue;
+}
+
+div.contact ul li a:hover {
+	color: $dark_sea_blue;
+}
+
+// TABLET
+
+@media screen and (min-width: 600px){
+	
+	div.navbar ul li {
+		display: inline-block;
+		padding: 1.1em;
+	}
+}
+
+// Desktop
+
+@media screen and (min-width:900px){
+	div.navbar ul li {
+		display: inline-block;
+		padding: 1.2em;
+	}
+	.header{
+
+		padding-top: 3em;
+		padding-bottom: 3em;
+		
+		.image, .title {
+			vertical-align: center;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+
+		.title {
+			margin-bottom: 2em;
+			h1 {
+				font-size: 5em;
+			}
+		}
+
+		img {
+			margin-top: .3em;
+			padding-bottom: .3em;
+		}
+	}
+	.login {
+		padding-top: .3em;
+	}
+
+}
